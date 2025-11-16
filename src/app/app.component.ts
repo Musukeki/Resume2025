@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PersonalInfoComponent } from './pages/personal-info/personal-info.component';
+import { MainContentComponent } from './pages/main-content/main-content.component';
 import { Title } from '@angular/platform-browser';
 
 // ** 資料來源 **
@@ -8,7 +9,7 @@ import { HeaderSettingService } from './@Service/headerSettings.service';
 
 @Component({
   selector: 'app-root',
-  imports: [PersonalInfoComponent],
+  imports: [PersonalInfoComponent, MainContentComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

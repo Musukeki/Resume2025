@@ -19,7 +19,7 @@
       "chTitle": "作品集",
       "enTitle": "Portfolio",
       "data": [
-        "智慧排班系統",
+        "智慧排班打卡系統",
         "動態問卷系統",
         "高雄市天氣預報",
         "個人技術部落格",
@@ -37,5 +37,72 @@
         "丙級會計事務(資訊)技術士"
       ]
     }
-  ]
+  ],
+  "mainInfo": {
+    "about": {
+      "title": "About",
+      "dataList": [
+        "我是國恒，目前正在万石科技參加職訓局為期五個月的 IT 工程師培訓（2025 Java全端工程師青年培訓計畫），培訓期間使用 HTML、SCSS、TypeScript 搭配前端框架 Angular 來完成網站頁面，並透過 Java、Spring Boot 來撰寫專案後端邏輯，資料庫則是使用 MySQL Workbranch。",
+        "秉持良好的態度，以及良好的團隊溝通能力，雖然非資工出生，但是很積極學習新技術，並且嚮往軟體開發的工作。"
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "dataList": [
+        {
+          "type": "FrontEnd",
+          "typeDataList": [
+            "HTML、CSS、SCSS",
+            "JavaScript、TypeScript",
+            "Angular、RWD"
+          ]
+        },
+        {
+          "type": "BackEnd",
+          "typeDataList": [
+            "Java、Spring Boot"
+          ]
+        },
+        {
+          "type": "Others",
+          "typeDataList": [
+            "Git、Github",
+            "MySQL Workbranch",
+            "Figma、VS Cod"
+          ]
+        }
+      ]
+    },
+    "experience": {
+    "title": "Experience",
+    "dataList": [
+      {
+        "compony": "万十科技（企業培訓）",
+        "date": "2025-06 ~ 2025-11",
+        "componyDataList": [
+          "使用 HTML、SCSS、TypeScript 搭配前端框架 Angular 進行網站前後台的頁面開發設計。",
+          "使用 Java、Spring Boot 完成後端 API 撰寫，並整合 MySQL Workbranch 資料庫。",
+          "多人協作，使用 Git、Github 進行版本控制。"
+        ]
+      },
+      {
+        "compony": "采江互動",
+        "date": "2025-03 ~ 2025-06",
+        "componyDataList": [
+          "負責蝦皮電商平台店家商品頁面與影音內容的審核，確保上架內容符合平台規範。",
+          "檢查商品標題、描述、圖片與影片，針對違規、敏感或不當資訊進行判斷與標註，維護平台內容品質與用戶體驗。",
+          "熟悉電商平台規範與內容稽核流程，能在高效率與高準確率下完成每日審核工作。"
+        ]
+      },
+      {
+        "compony": "元素科技",
+        "date": "2022-11 ~ 2024-05",
+        "componyDataList": [
+          "負責各類型 3C電子產品硬體維修。",
+          "維修售後服務以及後續追蹤。"
+        ]
+      }
+    ]
+  }
+  }
 }

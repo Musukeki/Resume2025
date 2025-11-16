@@ -1,1 +1,53 @@
-<p>main-content works!</p>
+<div class="main-wrapper">
+  <!-- 關於我 -->
+  <div class="main-section">
+    <h3 class="section-title">{{ mainInfo.about.title }}</h3>
+    <div class="section-content">
+      @for(item of mainInfo.about.dataList; track $index) {
+      <p class="content-txt">{{ item }}</p>
+      }
+    </div>
+  </div>
+
+  <!-- 技能 -->
+  <div class="main-section">
+    <h3 class="section-title">{{ mainInfo.skills.title }}</h3>
+    <div class="section-content">
+      <ul class="content-list">
+        @for(item of mainInfo.skills.dataList; track $index) {
+        <li class="content-item">
+          <p class="item-title">{{ item.type }}</p>
+          <div class="item-txt">
+            <ul>
+              @for(innerItem of item.typeDataList; track $index) {
+              <li>{{ innerItem }}</li>
+              }
+            </ul>
+          </div>
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+
+  <!-- 工作經歷 -->
+  <div class="main-section">
+    <h3 class="section-title">{{ mainInfo.experience.title }}</h3>
+    <div class="section-content">
+      @for(item of mainInfo.experience.dataList; track $index) {
+      <div class="item-group">
+        <div class="date-line"></div>
+        <ul class="date-list">
+          <p class="list-title">{{ item.compony }}</p>
+          <p class="list-time">{{ item.date }}</p>
+          @for(componyItem of item.componyDataList; track $index) {
+          <li class="list-item">
+            {{ componyItem }}
+          </li>
+          }
+        </ul>
+      </div>
+      }
+    </div>
+  </div>
+</div>

@@ -24,11 +24,21 @@
 
   .side-info {
     position: absolute;
-    // left: 0;
     top: 300px;
     width: 100%;
     padding: 0 12px;
   }
+}
+
+// * 主要內容設定
+.main-content {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  width: 72%;
+  height: calc(100% - 10%);
+  // background: #ddd;
+  // border: 1px solid #ddd;
 }
 
 // * 頭像設定
