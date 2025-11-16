@@ -1,0 +1,60 @@
+.info-list {
+  width: 100%;
+  .person-name {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #545b77;
+    margin-bottom: 16px;
+  }
+  .link-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    &-item {
+      width: 32px;
+      height: 32px;
+      margin: 0 2px;
+    }
+  }
+  &-item {
+    .item-group {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      margin-bottom: 32px;
+      padding-bottom: 16px;
+    }
+    .item-group:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+  .item-title {
+    color: #fff;
+    text-shadow: 2px 3px 5px #4d4d4d;
+    margin-bottom: 16px;
+    span {
+      color: #545b77;
+      text-shadow: none;
+      margin-left: 8px;
+    }
+  }
+  .item-content {
+    margin-left: 8px;
+    p {
+      margin-bottom: 12px;
+      color: #545b77;
+      display: flex;
+      align-items: center;
+    }
+    .item-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+  .item-content p:last-of-type {
+    margin-bottom: 0;
+  }
+}

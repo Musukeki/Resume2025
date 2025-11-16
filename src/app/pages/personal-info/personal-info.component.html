@@ -1,0 +1,42 @@
+<div class="info-list">
+  <p class="person-name">
+    {{ basicInformation.chineseName }} ({{ basicInformation.englishName }})
+  </p>
+  <div class="link-icons">
+    <div><img src="github.png" class="link-icons-item" /></div>
+    <div>
+      <img src="blog.png" class="link-icons-item" style="padding: 1px" />
+    </div>
+  </div>
+  <ul class="info-list-item">
+    <li class="item-group">
+      <h3 class="item-title">基本資料<span>Basic Information</span></h3>
+      <div class="item-content">
+        <p>
+          <span><img src="location.png" class="item-icon" /></span
+          >{{ basicInformation.location }}
+        </p>
+        <p>
+          <span><img src="phone.png" class="item-icon" /></span
+          >{{ basicInformation.phone }}
+        </p>
+        <p>
+          <span><img src="mail.png" class="item-icon" /></span
+          >{{ basicInformation.email }}
+        </p>
+      </div>
+    </li>
+    @for(item of sidebarInfo; track $index ) {
+    <li class="item-group">
+      <h3 class="item-title">
+        {{ item.chTitle }}<span>{{ item.enTitle }}</span>
+      </h3>
+      <div class="item-content">
+        @for(itemData of item.data; track $index) {
+        <p>{{ itemData }}</p>
+        }
+      </div>
+    </li>
+    }
+  </ul>
+</div>

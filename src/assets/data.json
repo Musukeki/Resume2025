@@ -1,0 +1,41 @@
+{
+  "headTitle": "Cliff Chu Resume",
+  "avatar": "生活照.jpg",
+  "basicInformation":  {
+    "chineseName": "朱國恒",
+    "englishName": "Cliff Chu",
+    "location": "Kaohsiung City, Taiwan",
+    "email": "wave99487chu@gmail.com",
+    "phone": "0972-106-116"
+  },
+
+  "sidebarInfo": [
+    {
+      "chTitle": "學歷",
+      "enTitle": "Education",
+      "data": ["樹德科技大學 行銷管理系", "中山工商 資料處理科"]
+    },
+    {
+      "chTitle": "作品集",
+      "enTitle": "Portfolio",
+      "data": [
+        "智慧排班系統",
+        "動態問卷系統",
+        "高雄市天氣預報",
+        "個人技術部落格",
+        "NFT 藝術交易平台",
+        "聊天機器人一頁式網站"
+      ]
+    },
+    {
+      "chTitle": "專業證照",
+      "enTitle": "Licence",
+      "data": [
+        "乙級電腦軟體應用技術士",
+        "丙級電腦軟體應用技術士",
+        "丙級網頁設計技術士",
+        "丙級會計事務(資訊)技術士"
+      ]
+    }
+  ]
+}

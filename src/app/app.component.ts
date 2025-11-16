@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { PersonalInfoComponent } from './pages/personal-info/personal-info.component';
+import { Title } from '@angular/platform-browser';
+
+// ** 資料來源 **
+import jsonData from '../assets/data.json';
+import { HeaderSettingService } from './@Service/headerSettings.service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [PersonalInfoComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'resume_2025';
+  constructor(
+    private title: Title,
+    private headerSettings: HeaderSettingService
+  ) {}
+  // ** 全域變數 **
+  avatar: string = jsonData.avatar;
+
+  ngOnInit() {
+    this.title.setTitle(jsonData.headTitle);
+  }
 }
