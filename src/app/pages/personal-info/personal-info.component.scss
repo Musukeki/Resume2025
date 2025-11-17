@@ -6,12 +6,22 @@
     font-weight: 700;
     color: #545b77;
     margin-bottom: 16px;
+    @media screen and (max-width: 430px) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
   .link-icons {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+    img {
+      @media screen and (max-width: 430px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
     &-item {
       width: 32px;
       height: 32px;
@@ -34,6 +44,9 @@
     color: #fff;
     text-shadow: 2px 3px 5px #4d4d4d;
     margin-bottom: 16px;
+    @media screen and (max-width: 430px) {
+      font-size: 22px;
+    }
     span {
       color: #545b77;
       text-shadow: none;
@@ -48,11 +61,18 @@
       color: #545b77;
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 430px) {
+        font-size: 18px;
+      }
     }
     .item-icon {
       width: 20px;
       height: 20px;
       margin-right: 8px;
+      @media screen and (max-width: 430px) {
+        margin-top: 5px;
+      }
     }
   }
   .item-content p:last-of-type {

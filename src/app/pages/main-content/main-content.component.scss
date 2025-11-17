@@ -13,7 +13,9 @@
     font-size: 18px;
     margin-left: 24px;
     line-height: 1.6;
-
+    @media screen and (max-width: 430px) {
+      margin-left: 12px;
+    }
     .content-list {
       display: flex;
       justify-content: space-between;
@@ -47,6 +49,7 @@
       display: flex;
       align-items: stretch;
       gap: 24px;
+
       .date-line {
         width: 2px;
         background: #bbb;
@@ -84,6 +87,10 @@
           margin-left: 24px;
           padding-left: 8px;
           text-align: justify;
+          @media screen and (max-width: 430px) {
+            margin-left: 18px;
+            margin-bottom: 8px;
+          }
           &::marker {
             color: rgba(85, 85, 85, 0.5);
           }
