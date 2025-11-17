@@ -17,7 +17,7 @@
         "build": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "outputPath": "dist/resume_2025/",
+            "outputPath": "dist/resume_2025",
             "baseHref": "/Resume2025/",
             "index": "src/index.html",
             "browser": "src/main.ts",
