@@ -3,9 +3,15 @@
     {{ basicInformation.chineseName }} ({{ basicInformation.englishName }})
   </p>
   <div class="link-icons">
-    <div><img src="github.png" class="link-icons-item" /></div>
     <div>
-      <img src="blog.png" class="link-icons-item" style="padding: 1px" />
+      <a href="{{ basicInformation.githubLink }}" target="_blank">
+        <img src="github.png" class="link-icons-item" />
+      </a>
+    </div>
+    <div>
+      <a href="{{ basicInformation.blogLink }}" target="_blank">
+        <img src="blog.png" class="link-icons-item" style="padding: 1px" />
+      </a>
     </div>
   </div>
   <ul class="info-list-item">
@@ -24,8 +30,10 @@
           >{{ basicInformation.phone }}
         </p>
         <p>
-          <span><img src="mail.png" class="item-icon" /></span
-          >{{ basicInformation.email }}
+          <span><img src="mail.png" class="item-icon" /></span>
+          <a class="mailto" href="mailto:{{ basicInformation.email }}">
+            {{ basicInformation.email }}
+          </a>
         </p>
       </div>
     </li>
@@ -39,11 +47,12 @@
         <p>
           <!-- {{ itemData }} -->
           @if(item.dataLink && item.dataLink[i]) {
-          <span>
+          <span class="item-link-group">
             <a [href]="item.dataLink[i]" target="_blank" class="item-link">
               <!-- {{ item.dataLink[i] }} -->
               {{ itemData }}
             </a>
+            <img class="link-icon" src="arrow_left.png" />
           </span>
           } @else {
           {{ itemData }}

@@ -8,7 +8,9 @@
     "englishName": "Cliff Chu",
     "location": "Kaohsiung City, Taiwan",
     "email": "wave99487chu@gmail.com",
-    "phone": "0972-106-116"
+    "phone": "0972-106-116",
+    "blogLink": "https://kurifu.tw/",
+    "githubLink": ""
   },
 
   "sidebarInfo": [
@@ -31,7 +33,7 @@
       "dataLink": [
         "https://github.com/Musukeki/ez_shift",
         "https://github.com/Musukeki/ng_assignment",
-        "https://github.com/Musukeki/api_weather",
+        "https://musukeki.github.io/api_weather/",
         "https://kurifu.tw/",
         "https://kurifu.tw/NFT_ec/",
         "https://cliff1213.github.io/chatTalker/"
