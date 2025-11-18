@@ -74,6 +74,14 @@
         margin-top: 5px;
       }
     }
+    .item-link {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+      &:hover {
+        color: #545b77;
+      }
+    }
   }
   .item-content p:last-of-type {
     margin-bottom: 0;

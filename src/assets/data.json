@@ -2,6 +2,8 @@
   "headTitle": "Cliff Chu Resume",
   "avatar": "生活照.jpg",
   "basicInformation":  {
+    "chTitle": "基本資料",
+    "enTitle": "Basic Information",
     "chineseName": "朱國恒",
     "englishName": "Cliff Chu",
     "location": "Kaohsiung City, Taiwan",
@@ -16,7 +18,7 @@
       "data": ["樹德科技大學 行銷管理系", "中山工商 資料處理科"]
     },
     {
-      "chTitle": "作品集",
+      "chTitle": "作品連結",
       "enTitle": "Portfolio",
       "data": [
         "智慧排班打卡系統",
@@ -25,6 +27,14 @@
         "個人技術部落格",
         "NFT 藝術交易平台",
         "聊天機器人一頁式網站"
+      ],
+      "dataLink": [
+        "https://github.com/Musukeki/ez_shift",
+        "https://github.com/Musukeki/ng_assignment",
+        "https://github.com/Musukeki/api_weather",
+        "https://kurifu.tw/",
+        "https://kurifu.tw/NFT_ec/",
+        "https://cliff1213.github.io/chatTalker/"
       ]
     },
     {

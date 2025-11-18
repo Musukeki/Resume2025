@@ -10,7 +10,10 @@
   </div>
   <ul class="info-list-item">
     <li class="item-group">
-      <h3 class="item-title">基本資料<span>Basic Information</span></h3>
+      <h3 class="item-title">
+        {{ basicInformation.chTitle }}
+        <span>{{ basicInformation.enTitle }}</span>
+      </h3>
       <div class="item-content">
         <p>
           <span><img src="location.png" class="item-icon" /></span
@@ -26,14 +29,26 @@
         </p>
       </div>
     </li>
-    @for(item of sidebarInfo; track $index ) {
+    @for(item of sidebarInfo; track $index) {
     <li class="item-group">
       <h3 class="item-title">
         {{ item.chTitle }}<span>{{ item.enTitle }}</span>
       </h3>
       <div class="item-content">
-        @for(itemData of item.data; track $index) {
-        <p>{{ itemData }}</p>
+        @for(itemData of item.data; track $index; let i = $index) {
+        <p>
+          <!-- {{ itemData }} -->
+          @if(item.dataLink && item.dataLink[i]) {
+          <span>
+            <a [href]="item.dataLink[i]" target="_blank" class="item-link">
+              <!-- {{ item.dataLink[i] }} -->
+              {{ itemData }}
+            </a>
+          </span>
+          } @else {
+          {{ itemData }}
+          }
+        </p>
         }
       </div>
     </li>

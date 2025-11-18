@@ -16,4 +16,10 @@ export class PersonalInfoComponent {
 
   // 左側列表資料
   sidebarInfo: any[] = jsonData.sidebarInfo;
+
+  ngOnInit() {
+    this.sidebarInfo.forEach((i) => {
+      console.log(i.dataLink);
+    });
+  }
 }
