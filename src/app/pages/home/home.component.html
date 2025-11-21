@@ -1,0 +1,27 @@
+<div class="container-wrapper">
+  <!-- 背景裝飾 -->
+  <div class="bg-decorate bg-decorate-rt"></div>
+  <div class="bg-decorate bg-decorate-lt"></div>
+  <div class="bg-decorate bg-decorate-l"></div>
+
+  <!-- 側邊(左)內容 -->
+  <div class="side-wrapper">
+    <!-- 大頭貼 -->
+    <div class="avatar-wrapper">
+      <img class="avatar" src="{{ avatar }}" alt="大頭照" />
+    </div>
+
+    <!-- 內文 -->
+    <div class="side-info">
+      <app-personal-info></app-personal-info>
+    </div>
+  </div>
+
+  <!-- 主要內容 -->
+  <div class="main-content">
+    <app-main-content></app-main-content>
+  </div>
+
+  <!-- 作品牆 -->
+  <button class="portfolio-btn" (click)="checkToPortfolio()">前往作品牆</button>
+</div>

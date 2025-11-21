@@ -1,23 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { PersonalInfoComponent } from './pages/personal-info/personal-info.component';
-import { MainContentComponent } from './pages/main-content/main-content.component';
+import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 // ** 資料來源 **
 import jsonData from '../assets/data.json';
-import { HeaderSettingService } from './@Service/headerSettings.service';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [PersonalInfoComponent, MainContentComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  constructor(
-    private title: Title,
-    private headerSettings: HeaderSettingService
-  ) {}
+  constructor(private title: Title) {}
   // ** 全域變數 **
   avatar: string = jsonData.avatar;
 

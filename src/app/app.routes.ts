@@ -1,6 +1,19 @@
 import { Path } from './../../node_modules/readdirp/esm/index.d';
 import { Routes } from '@angular/router';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
-  // { path: '', redirecTo: '/要重新導向的頁面', pathMatch: 'full' },
+  {
+    path: '',
+    component: HomeComponent,
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'portfolio',
+    component: PortfolioComponent,
+  },
 ];
