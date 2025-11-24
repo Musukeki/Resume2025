@@ -1,2 +1,30 @@
-<!-- 外層容器 -->
-<div class="container-wrapper"></div>
+<!-- ** 外層容器 ** -->
+<div class="container-wrapper">
+  <!-- masonry 套件架構 -->
+  <div #grid class="grid">
+    <div class="grid-sizer"></div>
+
+    <!-- 作品牆設定 -->
+    @for(item of portfolioData; track $index) {
+    <div class="grid-item" (click)="linkTo(item.link)">
+      <div
+        class="card"
+        [ngClass]="item.size"
+        [style.background-color]="item.color"
+        [style.background-image]="'url(' + item.image + ')'"
+      >
+        <h3 class="card-title">{{ item.title }}</h3>
+        <div class="card-txt">
+          @for(tag of item.tagList; track $index) {
+          <!--  -->
+          @if(tag) {
+          <span class="card-tag">{{ tag }}</span>
+          }
+          <!--  -->
+          }
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>

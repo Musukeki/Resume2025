@@ -1,7 +1,85 @@
-// 外容器
+// ** 外容器 **
 .container-wrapper {
   max-width: 1000px;
-  height: 300px;
-  background: #ddd;
+  // background: #ddd;
   margin: 0 auto;
+  position: relative;
+}
+
+// Masonry 設定
+.grid {
+  .grid-sizer {
+    width: 33.333%;
+  }
+  // 與 grid-sizer 保持一致
+  .grid-item {
+    width: 33.333%;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  @media screen and (max-width: 853px) {
+    .grid-sizer,
+    .grid-item {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+    }
+  }
+}
+
+// 卡片外觀
+.card {
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  background-size: 94%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-size: 140%;
+    background-position: left;
+  }
+  &-title {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+  }
+  &-txt {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+  }
+  & h3 {
+    background-color: #4653a8;
+    border: 1px solid #ddd;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  &-tag {
+    margin-right: 4px;
+    background-color: #19755b;
+    // border: 1px solid #ddd;
+    padding: 2px 4px;
+    border-radius: 1000px;
+    font-size: 12px;
+  }
+}
+
+// 單一卡高度設定
+.card.small {
+  height: 140px;
+}
+.card.medium {
+  height: 220px;
+}
+.card.large {
+  height: 320px;
 }

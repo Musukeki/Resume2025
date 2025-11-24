@@ -1,0 +1,50 @@
+[
+    {
+      "title": "智慧排班打卡系統",
+      "color": "#ff6b6b",
+      "size": "medium",
+      "image": "portfolio/使用者首頁.png",
+      "link": "https://hackmd.io/au45z7i4SxWW_dZwd6jD-Q",
+      "tagList": ["Java", "SpringBoot", "SQL", "Angular", "API"]
+    },
+    {
+      "title": "動態問卷系統",
+      "color": "#5f27cd",
+      "size": "medium",
+      "image": "portfolio/後台管理者列表.png",
+      "link": "https://hackmd.io/@cEBzx30SQYS7dbwb-IAHsA/HyhMMCZZZe",
+      "tagList": ["Java", "SpringBoot", "SQL", "Angular", "API"]
+    },
+    {
+      "title": "高雄市天氣預報",
+      "color": "#1dd1a1",
+      "size": "medium",
+      "image": "portfolio/天氣預報.png",
+      "link": "https://musukeki.github.io/api_weather/",
+      "tagList": ["Angular", "API"]
+    },
+    {
+      "title": "藝術交易平台",
+      "color": "#54a0ff",
+      "size": "medium",
+      "image": "portfolio/藝術交易平台.png",
+      "link": "https://kurifu.tw/NFT_ec/",
+      "tagList": ["Bootstrap", "JQuery", "RWD"]
+    },
+    {
+      "title": "聊天機器人一頁式網站",
+      "color": "#f368e0",
+      "size": "medium",
+      "image": "portfolio/聊天機器人.png",
+      "link": "https://kurifu.tw/chatTalker/",
+      "tagList": ["Bootstrap", "RWD"]
+    },
+    {
+      "title": "個人部落格",
+      "color": "#f368e0",
+      "size": "medium",
+      "image": "portfolio/個人部落格.png",
+      "link": "https://kurifu.tw/",
+      "tagList": ["RWD"]
+    }
+  ]
