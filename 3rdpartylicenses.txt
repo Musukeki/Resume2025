@@ -98,6 +98,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+desandro-matches-selector
+MIT
+
+ev-emitter
+MIT
+
+fizzy-ui-utils
+MIT
+
+get-size
+MIT
+
+masonry-layout
+MIT
+
+outlayer
+MIT
+
 rxjs
 Apache-2.0
                                Apache License
