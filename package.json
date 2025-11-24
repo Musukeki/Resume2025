@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:pages": "ng build --configuration production --base-href=/Resume2025/",
+    "deploy": "npm run build:pages && npx angular-cli-ghpages --dir=dist/resume_2025"
   },
   "private": true,
   "dependencies": {

@@ -5,7 +5,7 @@
       "size": "medium",
       "image": "portfolio/使用者首頁.png",
       "link": "https://hackmd.io/au45z7i4SxWW_dZwd6jD-Q",
-      "tagList": ["Java", "SpringBoot", "SQL", "Angular", "API"]
+      "tagList": ["Java", "SpringBoot", "MySQL", "Angular", "API"]
     },
     {
       "title": "動態問卷系統",
@@ -13,7 +13,7 @@
       "size": "medium",
       "image": "portfolio/後台管理者列表.png",
       "link": "https://hackmd.io/@cEBzx30SQYS7dbwb-IAHsA/HyhMMCZZZe",
-      "tagList": ["Java", "SpringBoot", "SQL", "Angular", "API"]
+      "tagList": ["Java", "SpringBoot", "MySQL", "Angular", "API"]
     },
     {
       "title": "高雄市天氣預報",

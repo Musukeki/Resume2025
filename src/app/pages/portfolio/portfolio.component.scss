@@ -46,6 +46,12 @@
     background-size: 140%;
     background-position: left;
   }
+  @media screen and (max-width: 853px) {
+    &:hover {
+      background-size: 94%;
+      background-position: center;
+    }
+  }
   &-title {
     position: absolute;
     left: 12px;
