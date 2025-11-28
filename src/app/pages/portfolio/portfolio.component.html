@@ -1,5 +1,30 @@
+<div class="topbar">
+  <h2 class="topbar-title">
+    作品牆 <span class="topbar-title-en">Portfolio</span>
+  </h2>
+
+  <ul class="topbar-list" [ngClass]="{ active: !isActive }">
+    <li class="return" (click)="returnBtn()">返回前頁</li>
+  </ul>
+
+  <div class="desk-menu" (click)="returnBtn()">
+    <img src="back-index.png" />
+  </div>
+
+  <div class="mobile-menu" (click)="navToggle()">
+    @if(!isActive) {
+    <img
+      class="img-menu"
+      src="mobile-menu.png"
+      [ngClass]="{ active: !isActive }"
+    />
+    } @else {
+    <img class="img-close" src="close.png" />
+    }
+  </div>
+</div>
 <!-- ** 外層容器 ** -->
-<div class="container-wrapper">
+<div class="container-wrapper" [ngClass]="{ active: isActive }">
   <!-- masonry 套件架構 -->
   <div #grid class="grid">
     <div class="grid-sizer"></div>

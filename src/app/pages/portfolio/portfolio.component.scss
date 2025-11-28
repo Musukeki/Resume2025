@@ -1,9 +1,93 @@
+.topbar {
+  background: #545b77;
+  margin-bottom: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 8px;
+  }
+  &-title {
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    @media screen and (max-width: 540px) {
+      font-size: 20px;
+    }
+  }
+  &-title-en {
+    font-style: italic;
+  }
+  .desk-menu {
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    cursor: pointer;
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
+    img {
+      width: 36px;
+    }
+  }
+  .mobile-menu {
+    display: none;
+    @media screen and (max-width: 540px) {
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 8px;
+      cursor: pointer;
+      img {
+        width: 30px;
+      }
+      .img-menu {
+        display: none;
+      }
+      .img-menu.active {
+        display: inline-block;
+      }
+      .img-close {
+        display: inline-block;
+      }
+      .active {
+        display: inline-block;
+      }
+    }
+  }
+  &-list {
+    background: #ddd;
+    color: #545b77;
+    text-align: center;
+    padding: 8px 0;
+    cursor: pointer;
+    overflow: hidden;
+    height: auto;
+    transition: 0.3s;
+  }
+  &-list.active {
+    height: 0;
+    padding: 0;
+  }
+}
 // ** 外容器 **
 .container-wrapper {
   max-width: 1000px;
-  // background: #ddd;
   margin: 0 auto;
   position: relative;
+  padding-top: 80px;
+  transition: 0.3s;
+  @media screen and (max-width: 853px) {
+    padding-top: 64px;
+  }
+  @media screen and (max-width: 540px) {
+    padding-top: 55px;
+  }
+}
+.container-wrapper.active {
+  padding-top: 90px;
 }
 
 // Masonry 設定
@@ -43,7 +127,7 @@
   cursor: pointer;
   transition: 0.3s;
   &:hover {
-    background-size: 140%;
+    background-size: 125%;
     background-position: left;
   }
   @media screen and (max-width: 853px) {
@@ -71,7 +155,7 @@
   }
   &-tag {
     margin-right: 4px;
-    background-color: #19755b;
+    background-color: #468a9a;
     // border: 1px solid #ddd;
     padding: 2px 4px;
     border-radius: 1000px;

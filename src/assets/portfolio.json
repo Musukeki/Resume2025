@@ -1,7 +1,7 @@
 [
     {
       "title": "智慧排班打卡系統",
-      "color": "#ff6b6b",
+      "color": "#F2AEBB",
       "size": "medium",
       "image": "portfolio/使用者首頁.png",
       "link": "https://hackmd.io/au45z7i4SxWW_dZwd6jD-Q",
@@ -9,7 +9,7 @@
     },
     {
       "title": "動態問卷系統",
-      "color": "#5f27cd",
+      "color": "#696FC7",
       "size": "medium",
       "image": "portfolio/後台管理者列表.png",
       "link": "https://hackmd.io/@cEBzx30SQYS7dbwb-IAHsA/HyhMMCZZZe",
@@ -17,7 +17,7 @@
     },
     {
       "title": "高雄市天氣預報",
-      "color": "#1dd1a1",
+      "color": "#A7AAE1",
       "size": "medium",
       "image": "portfolio/天氣預報.png",
       "link": "https://musukeki.github.io/api_weather/",
@@ -25,7 +25,7 @@
     },
     {
       "title": "藝術交易平台",
-      "color": "#54a0ff",
+      "color": "#a1b7d8",
       "size": "medium",
       "image": "portfolio/藝術交易平台.png",
       "link": "https://kurifu.tw/NFT_ec/",
@@ -33,7 +33,7 @@
     },
     {
       "title": "聊天機器人一頁式網站",
-      "color": "#f368e0",
+      "color": "#F5D3C4",
       "size": "medium",
       "image": "portfolio/聊天機器人.png",
       "link": "https://kurifu.tw/chatTalker/",
@@ -41,7 +41,7 @@
     },
     {
       "title": "個人部落格",
-      "color": "#f368e0",
+      "color": "#6D94C5",
       "size": "medium",
       "image": "portfolio/個人部落格.png",
       "link": "https://kurifu.tw/",

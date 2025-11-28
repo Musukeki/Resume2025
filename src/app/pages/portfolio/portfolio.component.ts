@@ -21,6 +21,9 @@ export class PortfolioComponent implements AfterViewInit {
 
   portfolioData = jsonData;
 
+  // 下拉開關
+  isActive: boolean = false;
+
   constructor(private router: Router) {}
 
   ngOnInit() {}
@@ -36,10 +39,19 @@ export class PortfolioComponent implements AfterViewInit {
     });
   }
 
+  navToggle() {
+    this.isActive = !this.isActive;
+  }
+
   // 前往作品內頁
   linkTo(url: any) {
     // this.router.navigate([link]);
 
     window.open(url, '_blank');
+  }
+
+  // 回前頁
+  returnBtn() {
+    this.router.navigateByUrl('/');
   }
 }
